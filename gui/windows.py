@@ -1,9 +1,11 @@
+import logging
+import os
 import tkinter as tk
 import pyperclip
 from PIL import Image, ImageTk
 
+import log_manager
 from gui.components import bordered_panel, big_button, small_button
-from console import add_listener as on_log_text, add_line as add_console_line
 
 class MainWindow(tk.Tk):
     main_frame: tk.Frame
@@ -11,13 +13,13 @@ class MainWindow(tk.Tk):
 
     def _add_console_line(self, line:str):
         self.console_text.configure(state='normal')
-        self.console_text.insert(tk.END,line)
+        self.console_text.insert(tk.END,line+os.linesep)
         self.console_text.configure(state='disabled')
         if self.console_autoscroll.get():
             self.console_text.see(tk.END)
 
     def show_options(self):
-        add_console_line('abc')
+        logging.info('OPTIONS')
         print(type(self.console_autoscroll.get()))
 
     def show_about(self):
@@ -88,12 +90,12 @@ class MainWindow(tk.Tk):
         console_frame.rowconfigure(0, weight=1)
 
         console_text_frame = tk.Frame(console_frame)
-        self.console_text = tk.Text(console_text_frame,state=tk.DISABLED,height=0,width=0,highlightbackground='cornflower blue',relief='solid',borderwidth=0,highlightthickness=1)
+        self.console_text = tk.Text(console_text_frame,state=tk.DISABLED,height=0,width=0,highlightbackground='cornflower blue',relief='solid',borderwidth=0,highlightthickness=1,wrap='none')
         self.console_text.pack(side='left',fill=tk.BOTH,expand=True)
         scroll = tk.Scrollbar(console_text_frame,orient='vertical',command=self.console_text.yview)
         scroll.pack(side='left',fill=tk.Y,after=self.console_text)
         self.console_text.configure(yscrollcommand=scroll.set)
-        on_log_text(self._add_console_line)
+        log_manager.add_listener(self._add_console_line)
         console_text_frame.grid(column=0,row=0,sticky='NSEW')
 
         console_frame.columnconfigure(1,minsize=5)
