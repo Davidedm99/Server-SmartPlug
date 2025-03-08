@@ -1,5 +1,6 @@
 import tkinter as tk
 import pyperclip
+from PIL import Image, ImageTk
 
 from gui.components import bordered_panel, big_button, small_button
 from console import add_listener as on_log_text, add_line as add_console_line
@@ -16,11 +17,36 @@ class MainWindow(tk.Tk):
             self.console_text.see(tk.END)
 
     def show_options(self):
-        pass
-
-    def show_about(self):
         add_console_line('abc')
         print(type(self.console_autoscroll.get()))
+
+    def show_about(self):
+        x,y = self.winfo_pointerxy()
+        about = tk.Toplevel()
+        about.geometry(f"+{x}+{y}")
+        about.iconbitmap(self.icon_path)
+        about.title("About")
+        about.configure(padx=30,pady=20,background='white',highlightcolor='cornflower blue',highlightbackground='cornflower blue',highlightthickness=1,relief='solid')
+        about.overrideredirect(True)
+        about.resizable(False, False)
+
+        title_frame = tk.Frame(about,background='white')
+        image = Image.open(self.icon_path)
+        image = image.resize((64,64))
+        tk_image = ImageTk.PhotoImage(image)
+        label = tk.Label(title_frame, image=tk_image,background='white')
+        label.image = tk_image
+        label.pack(side='left',pady=20)
+        tk.Label(title_frame, text=self.title(),font=('Segoe UI',16),background='white').pack(side=tk.LEFT,padx=20)
+        title_frame.pack()
+        with open('metadata.txt','r',encoding='utf-8') as f:
+            for l in f:
+                tk.Label(about,text=l.strip(),background='white').pack(pady=0)
+
+        ok = small_button(about,'Ok',command=about.destroy)
+        ok.configure(width=20)
+        ok.pack(pady=10)
+
 
     def _clear_console(self):
         self.console_text.configure(state='normal')
@@ -30,10 +56,12 @@ class MainWindow(tk.Tk):
     def _copy_console(self):
         pyperclip.copy(self.console_text.get('1.0',tk.END))
 
-    def __init__(self,title:str):
+    def __init__(self,title:str,icon_path:str):
         tk.Tk.__init__(self)
         # Window properties
         self.title(title)
+        self.iconbitmap(icon_path)
+        self.icon_path = icon_path
         self.minsize(600,400)
         self.geometry('600x400')
         self.configure(background='white',padx=10,pady=5)
@@ -89,7 +117,7 @@ class MainWindow(tk.Tk):
 
 
 if __name__ == '__main__':
-    w = MainWindow('Titolo di prova')
+    w = MainWindow('Titolo di prova','icon.ico')
     tk.Label(w.main_frame, text="Change me!", foreground='red', background='yellow').pack(expand=True, fill='both')
-    
+
     w.mainloop()
