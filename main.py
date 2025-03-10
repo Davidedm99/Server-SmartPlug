@@ -3,11 +3,25 @@ import threading
 import tkinter as tk
 from pathlib import Path
 
+from starlette.requests import Request
+from starlette.responses import Response
+
 from gui.options_window import Option
 from gui.windows import MainWindow
 from log_manager import init_logging
-from network import Api
+from network import Api, send_message
 from options import Options
+
+def hello_sync():
+    return {'message': 'hello world'}
+
+async def hello_async():
+    return {'message': 'hello world'}
+
+async def hello_polling(req:Request):
+    body = await req.json()
+    send_message(body['activityAddress'],json.dumps({'message': 'hello world'}))
+    return Response('')
 
 if __name__ == '__main__':
     with open(Path(__file__).resolve().with_name('metadata.json'),'r') as f:
@@ -23,10 +37,10 @@ if __name__ == '__main__':
             f'Version: {data['version']}',
         ]
         ICON_PATH = Path(__file__).resolve().with_name('icon.ico')
-
     threading.current_thread().name = TITLE
     init_logging()
 
+    # TODO: replace these options with the ones relevant for your application
     options = Options(AUTHOR,TITLE,[
         Option('Stringa', 'aaa'),
         Option('Intero', 0),
@@ -37,9 +51,15 @@ if __name__ == '__main__':
     ])
     w = MainWindow(TITLE,ICON_PATH,options,ABOUT_STRINGS)
 
+    # TODO: change this line with the GUI specific to your application
     tk.Label(w.main_frame, text="Change me!", foreground='red', background='yellow').pack(expand=True, fill='both')
 
-    api = Api({},port=PORT,host=HOST)
+    # TODO: replace these API calls with the ones relevant for you
+    api = Api({
+        '/hello_sync': hello_sync,
+        '/hello_async': hello_async,
+        '/hello_polling': hello_polling,
+    },port=PORT,host=HOST)
     api.start()
 
     w.mainloop()
