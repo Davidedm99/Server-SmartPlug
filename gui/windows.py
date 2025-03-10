@@ -1,12 +1,13 @@
-import logging
 import os
 import tkinter as tk
+
 import pyperclip
 from PIL import Image, ImageTk
 
 import log_manager
 from gui.components import bordered_panel, big_button, small_button
-from gui.options import OptionsGUI
+from gui.options_window import OptionsGUI
+from options import Options
 
 
 class MainWindow(tk.Tk):
@@ -20,11 +21,7 @@ class MainWindow(tk.Tk):
             self.console_text.see(tk.END)
 
     def show_options(self):
-        options = OptionsGUI(self)
-        options.title('Options')
-        options.iconbitmap(self.icon_path)
-        options.geometry('600x400')
-        options.configure(background='white',padx=10,pady=5)
+        options = OptionsGUI(self.options)
         options.transient(self)
         options.grab_set()
         self.wait_window(options)
@@ -34,14 +31,14 @@ class MainWindow(tk.Tk):
         x,y = self.winfo_pointerxy()
         about = tk.Toplevel()
         about.geometry(f"+{x}+{y}")
-        about.iconbitmap(self.icon_path)
+        about.iconbitmap('icon.ico')
         about.title("About")
         about.configure(padx=30,pady=20,background='white',highlightcolor='cornflower blue',highlightbackground='cornflower blue',highlightthickness=1,relief='solid')
         about.overrideredirect(True)
         about.resizable(False, False)
 
         title_frame = tk.Frame(about,background='white')
-        image = Image.open(self.icon_path)
+        image = Image.open('icon.ico')
         image = image.resize((64,64))
         tk_image = ImageTk.PhotoImage(image)
         label = tk.Label(title_frame, image=tk_image,background='white')
@@ -49,9 +46,9 @@ class MainWindow(tk.Tk):
         label.pack(side='left',pady=20)
         tk.Label(title_frame, text=self.title(),font=('Segoe UI',16),background='white').pack(side=tk.LEFT,padx=20)
         title_frame.pack()
-        with open('metadata.txt','r',encoding='utf-8') as f:
-            for l in f:
-                tk.Label(about,text=l.strip(),background='white').pack(pady=0)
+
+        for abt in self.about:
+            tk.Label(about, text=abt.strip(), background='white').pack(pady=0)
 
         ok = small_button(about,'Ok',command=about.destroy)
         ok.configure(width=20)
@@ -66,17 +63,18 @@ class MainWindow(tk.Tk):
     def _copy_console(self):
         pyperclip.copy(self.console_text.get('1.0',tk.END))
 
-    def __init__(self,title:str,icon_path:str):
+    def __init__(self,title:str,options:Options,about:list[str]):
         tk.Tk.__init__(self)
         # Window properties
         self.title(title)
-        self.iconbitmap(icon_path)
-        self.icon_path = icon_path
+        self.iconbitmap('icon.ico')
         self.minsize(600,400)
         self.geometry('600x400')
         self.configure(background='white',padx=10,pady=5)
         self.columnconfigure(0,weight=1)
         self.console_autoscroll = tk.BooleanVar(value=True)
+        self.options = options
+        self.about = about
 
         # About and options
         header_frame = bordered_panel(self)
@@ -127,7 +125,17 @@ class MainWindow(tk.Tk):
 
 
 if __name__ == '__main__':
-    w = MainWindow('Titolo di prova','icon.ico')
+    from options import Option
+    from path import Path
+    opt = Options('test','test',[
+        Option('Stringa', 'aaa'),
+        Option('Intero', 0),
+        Option('Float', .5),
+        Option('Bool', True),
+        Option('Cartella', Path.cwd()),
+        Option('File', Path(__file__)),
+    ])
+    w = MainWindow('test',opt,[f'About string {i}' for i in range(10)])
     tk.Label(w.main_frame, text="Change me!", foreground='red', background='yellow').pack(expand=True, fill='both')
 
     w.mainloop()
