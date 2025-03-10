@@ -6,10 +6,11 @@ from PIL import Image, ImageTk
 
 import log_manager
 from gui.components import bordered_panel, big_button, small_button
+from gui.options import OptionsGUI
+
 
 class MainWindow(tk.Tk):
     main_frame: tk.Frame
-
 
     def _add_console_line(self, line:str):
         self.console_text.configure(state='normal')
@@ -19,8 +20,15 @@ class MainWindow(tk.Tk):
             self.console_text.see(tk.END)
 
     def show_options(self):
-        logging.info('OPTIONS')
-        print(type(self.console_autoscroll.get()))
+        options = OptionsGUI(self)
+        options.title('Options')
+        options.iconbitmap(self.icon_path)
+        options.geometry('600x400')
+        options.configure(background='white',padx=10,pady=5)
+        options.transient(self)
+        options.grab_set()
+        self.wait_window(options)
+
 
     def show_about(self):
         x,y = self.winfo_pointerxy()
