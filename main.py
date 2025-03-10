@@ -10,7 +10,7 @@ from network import Api
 from options import Options
 
 if __name__ == '__main__':
-    with open('metadata.json','r') as f:
+    with open(Path(__file__).resolve().with_name('metadata.json'),'r') as f:
         data = json.load(f)
         TITLE = data['title']
         AUTHOR = data['author']
@@ -22,6 +22,7 @@ if __name__ == '__main__':
             f'© {start}-{end}',
             f'Version: {data['version']}',
         ]
+        ICON_PATH = Path(__file__).resolve().with_name('icon.ico')
 
     threading.current_thread().name = TITLE
     init_logging()
@@ -34,7 +35,7 @@ if __name__ == '__main__':
         Option('Cartella', Path.cwd()),
         Option('File', Path(__file__)),
     ])
-    w = MainWindow(TITLE,options,ABOUT_STRINGS)
+    w = MainWindow(TITLE,ICON_PATH,options,ABOUT_STRINGS)
 
     tk.Label(w.main_frame, text="Change me!", foreground='red', background='yellow').pack(expand=True, fill='both')
 

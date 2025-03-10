@@ -17,7 +17,6 @@ class OptionsGUI(tk.Toplevel):
 
         # Window title
         self.title('Options')
-        self.iconbitmap('icon.ico')
         self.geometry('600x400')
         self.configure(background='white',padx=10,pady=5)
 

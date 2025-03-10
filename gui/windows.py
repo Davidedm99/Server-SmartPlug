@@ -3,6 +3,7 @@ import tkinter as tk
 
 import pyperclip
 from PIL import Image, ImageTk
+from pathlib import Path
 
 import log_manager
 from gui.components import bordered_panel, big_button, small_button
@@ -22,6 +23,7 @@ class MainWindow(tk.Tk):
 
     def show_options(self):
         options = OptionsGUI(self.options)
+        options.iconbitmap(self.icon_path)
         options.transient(self)
         options.grab_set()
         self.wait_window(options)
@@ -31,14 +33,14 @@ class MainWindow(tk.Tk):
         x,y = self.winfo_pointerxy()
         about = tk.Toplevel()
         about.geometry(f"+{x}+{y}")
-        about.iconbitmap('icon.ico')
+        about.iconbitmap(self.icon_path)
         about.title("About")
         about.configure(padx=30,pady=20,background='white',highlightcolor='cornflower blue',highlightbackground='cornflower blue',highlightthickness=1,relief='solid')
         about.overrideredirect(True)
         about.resizable(False, False)
 
         title_frame = tk.Frame(about,background='white')
-        image = Image.open('icon.ico')
+        image = Image.open(self.icon_path)
         image = image.resize((64,64))
         tk_image = ImageTk.PhotoImage(image)
         label = tk.Label(title_frame, image=tk_image,background='white')
@@ -63,11 +65,12 @@ class MainWindow(tk.Tk):
     def _copy_console(self):
         pyperclip.copy(self.console_text.get('1.0',tk.END))
 
-    def __init__(self,title:str,options:Options,about:list[str]):
+    def __init__(self,title:str,icon_path:Path,options:Options,about:list[str]):
         tk.Tk.__init__(self)
         # Window properties
         self.title(title)
-        self.iconbitmap('icon.ico')
+        self.icon_path = icon_path
+        self.iconbitmap(icon_path)
         self.minsize(600,400)
         self.geometry('600x400')
         self.configure(background='white',padx=10,pady=5)
@@ -126,7 +129,7 @@ class MainWindow(tk.Tk):
 
 if __name__ == '__main__':
     from options import Option
-    from path import Path
+    from pathlib import Path
     opt = Options('test','test',[
         Option('Stringa', 'aaa'),
         Option('Intero', 0),
