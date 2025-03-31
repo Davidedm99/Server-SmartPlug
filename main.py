@@ -1,11 +1,12 @@
+import asyncio
 import json
 import threading
-import tkinter as tk
 from pathlib import Path
 
 from starlette.requests import Request
 from starlette.responses import Response
 
+import TapoPlugs
 from gui.options_window import Option
 from gui.windows import MainWindow
 from log_manager import init_logging
@@ -40,19 +41,25 @@ if __name__ == '__main__':
     threading.current_thread().name = TITLE
     init_logging()
 
+
     # TODO: replace these options with the ones relevant for your application
     options = Options(AUTHOR,TITLE,[
-        Option('Stringa', 'aaa'),
-        Option('Intero', 0),
-        Option('Float', .5),
-        Option('Bool', True),
+        Option('Username', ''),
+        Option('Password', ''),
+        #Option('Intero', 0),
+        #Option('Float', .5),
+        #Option('Bool', True),
         Option('Cartella', Path.cwd()),
         Option('File', Path(__file__)),
     ])
-    w = MainWindow(TITLE,ICON_PATH,options,ABOUT_STRINGS)
+
+    # Automatic discover to fill the central box
+    devices = []
+
+    w = MainWindow(TITLE,ICON_PATH,options,ABOUT_STRINGS, devices)
 
     # TODO: change this line with the GUI specific to your application
-    tk.Label(w.main_frame, text="No Devices!", foreground='black', background='white').pack(expand=True, fill='both')
+    #tk.Label(w.main_frame, text="No Devices!", foreground='black', background='white').pack(expand=True, fill='both')
 
     # TODO: replace these API calls with the ones relevant for you
     api = Api({

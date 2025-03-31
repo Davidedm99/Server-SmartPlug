@@ -14,3 +14,326 @@ Using proactor: IocpProactor
 Discovering devices!
 Discovering devices!
 Discovering devices!
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Starting Discovery!
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Starting Discovery!
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Starting Discovery!
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Starting Discovery!
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Starting Discovery on local network!
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Discovered 0 devices
+Starting Discovery on local network!
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Starting Discovery on local network!
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Discovered 0 devices
+No devices found.
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Starting Discovery on local network!
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Discovered 0 devices
+No devices found.
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Starting Discovery on local network!
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Starting Discovery on local network!
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Starting Discovery on local network!
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Discovery started...
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Discovery started...
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovered 0 devices
+Discovered 0 devices
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Discovery started...
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Discovery finished! Found: 0 devices
+Discovered 0 devices
