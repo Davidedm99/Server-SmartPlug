@@ -98,10 +98,11 @@ if __name__ == '__main__':
     title='test'
     root.title(title)
     options = Options('test','test',[
-        Option('Stringa','aaa'),
-        Option('Intero',0),
-        Option('Float',.5),
-        Option('Bool',True),
+        Option('UserName','aaa'),
+        Option('Password', 'aaa'),
+        #Option('Intero',0),
+        #Option('Float',.5),
+        #Option('Bool',True),
         Option('Cartella',Path.cwd()),
         Option('File',Path(__file__)),
     ])

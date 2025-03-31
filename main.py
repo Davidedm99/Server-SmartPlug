@@ -52,7 +52,7 @@ if __name__ == '__main__':
     w = MainWindow(TITLE,ICON_PATH,options,ABOUT_STRINGS)
 
     # TODO: change this line with the GUI specific to your application
-    tk.Label(w.main_frame, text="Change me!", foreground='red', background='yellow').pack(expand=True, fill='both')
+    tk.Label(w.main_frame, text="No Devices!", foreground='black', background='white').pack(expand=True, fill='both')
 
     # TODO: replace these API calls with the ones relevant for you
     api = Api({

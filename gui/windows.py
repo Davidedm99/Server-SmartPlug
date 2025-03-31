@@ -1,3 +1,4 @@
+import logging
 import os
 import tkinter as tk
 
@@ -27,6 +28,9 @@ class MainWindow(tk.Tk):
         options.transient(self)
         options.grab_set()
         self.wait_window(options)
+
+    def start_discovery(self):
+        logging.info("Discovering devices!")
 
 
     def show_about(self):
@@ -87,6 +91,12 @@ class MainWindow(tk.Tk):
         header_frame.columnconfigure(1,minsize=5)
         header_frame.grid(row=0,sticky='nw',pady=5)
 
+        # Discovery
+        discover_frame = bordered_panel(self)
+        big_button(discover_frame, "Discover", command=self.start_discovery).grid(row=0, column=5)
+        discover_frame.columnconfigure(1, minsize=5)
+        discover_frame.grid(row=0, sticky='ne', pady=5)
+
         # Application-specific panel
         self.main_frame = bordered_panel(self)
         self.rowconfigure(1,weight=4)
@@ -139,6 +149,5 @@ if __name__ == '__main__':
         Option('File', Path(__file__)),
     ])
     w = MainWindow('test',opt,[f'About string {i}' for i in range(10)])
-    tk.Label(w.main_frame, text="Change me!", foreground='red', background='yellow').pack(expand=True, fill='both')
 
     w.mainloop()
