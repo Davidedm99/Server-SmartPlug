@@ -1,8 +1,10 @@
-import asyncio
+import functools
 import logging
 import os
 import threading
 import tkinter as tk
+from functools import partial
+from typing import Dict
 
 import pyperclip
 from PIL import Image, ImageTk
@@ -10,10 +12,9 @@ from pathlib import Path
 
 import TapoPlugs
 import log_manager
-from gui.components import bordered_panel, big_button, small_button, device_panel
+from gui.components import bordered_panel, big_button, small_button
 from gui.options_window import OptionsGUI
 from options import Options
-
 
 
 class MainWindow(tk.Tk):
@@ -35,26 +36,88 @@ class MainWindow(tk.Tk):
 
     # Do the discovery with the kasa library
     def python_kasa(self, callback):
-        self.devices = TapoPlugs.retrieve_devices()
+        self.result = TapoPlugs.retrieve_devices()
         callback()
-
-    # Fill the box with the discovered devices info
-    def discovered_devices(self):
-        self.device_listbox.delete(0, tk.END)
-
-        if self.devices:
-            for ip, device in self.devices.items():
-                # Add each discovered device (device alias and IP)
-                self.device_listbox.insert(tk.END, f"{device.alias} - {ip}")
-            logging.info("Discovery complete.")  # Log when discovery is done
-        else:
-            self.device_listbox.insert(tk.END, "No devices found.")
 
     # Discovery function
     def tapo_discovery(self):
         logging.info("Discovery started...")
-        thread = threading.Thread(target=self.python_kasa, args=(lambda: self.after(0, self.discovered_devices),))
+        self.clear_entries()
+        thread = threading.Thread(target=self.python_kasa, args=(lambda: self.after(0, self.populate_frame()),),
+                                  name='Discovery',
+                                  daemon=True)
         thread.start()
+
+    def tapo_update(self, device):
+        thread = threading.Thread(target=self.python_kasa, args=(lambda: self.after(0, self.populate_frame()),),
+                                  name='Discovery',
+                                  daemon=True)
+        thread.start()
+
+    # Turn on/off the tapo
+    def toggle_status(self, button, ip, deviceName):
+        logging.info("Switching status")
+        # Retrieve a specific Tapo
+        device = self.devices[deviceName]
+
+        if button['text'] == "ON":
+            thread = threading.Thread(
+                target=functools.partial(device.turn_on, lambda: self.after(0, self.update_button),
+                                         device),
+                name='TapoSwitch',
+                daemon=True
+            )
+        else:
+            thread = threading.Thread(
+                target=functools.partial(device.turn_off, lambda: self.after(0, self.update_button),
+                                         device),
+                name='TapoSwitch',
+                daemon=True
+            )
+
+        thread.start()
+
+    def update_button(self, button):
+        button.config(text="ON" if button.text["OFF"] else "OFF")
+
+    # Clear the central widget when discovery is started
+    def clear_entries(self):
+        for widget in self.widgets:
+            widget.destroy()
+        self.widgets.clear()
+
+    def update_name(self, event, entry, device):
+        event.widget.master.focus_set()
+
+    # Function for populating the central part of the interface based on the return of python-kasa
+    def populate_frame(self):
+        for i, ip in enumerate(self.result):
+            self.main_frame.columnconfigure(0, weight=1)
+
+            entry = tk.Entry(self.main_frame)
+            entry.insert(0, self.result[ip].config.connection_type.device_family.value)
+            entry.grid(row=i, column=0, padx=5, pady=2, sticky="we")
+
+            # Rename the entry
+            entry.bind("<Return>", lambda e, ent=entry, dev=ip: self.update_name(e, ent, dev))
+
+            label = tk.Label(self.main_frame, text=ip)
+            label.grid(row=i, column=1, padx=5, pady=2)
+
+            button = tk.Button(
+                self.main_frame,
+                text="OFF" if self.result[ip].is_on else "ON"
+            )
+
+            button.config(command=partial(self.toggle_status, button, ip, entry.get()))
+            button.grid(row=i, column=2, padx=5, pady=2)
+
+            self.widgets.extend([entry, label, button])
+
+            # Create Tapo object
+            plug = TapoPlugs.TapoPlugs(ip, self.options['Username'].value, self.options['Password'].value)
+            plug.update_self()
+            self.devices[entry.get()] = plug
 
     def show_about(self):
         x, y = self.winfo_pointerxy()
@@ -92,7 +155,7 @@ class MainWindow(tk.Tk):
     def _copy_console(self):
         pyperclip.copy(self.console_text.get('1.0', tk.END))
 
-    def __init__(self, title: str, icon_path: Path, options: Options, about: list[str], devices: list[str]):
+    def __init__(self, title: str, icon_path: Path, options: Options, about: list[str], devices: Dict[str, TapoPlugs]):
         tk.Tk.__init__(self)
         # Window properties
         self.title(title)
@@ -106,6 +169,8 @@ class MainWindow(tk.Tk):
         self.options = options
         self.about = about
         self.devices = devices
+        self.widgets = []
+        self.result = []
 
         # About and options
         header_frame = bordered_panel(self)
@@ -121,7 +186,7 @@ class MainWindow(tk.Tk):
         discover_frame.grid(row=0, sticky='ne', pady=5)
 
         # Application-specific panel
-        self.main_frame = device_panel(self)
+        self.main_frame = bordered_panel(self)
         self.rowconfigure(1, weight=4)
         self.main_frame.grid(row=1, sticky='nwes', pady=5)
 

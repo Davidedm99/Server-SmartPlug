@@ -337,3 +337,2481 @@ Using proactor: IocpProactor
 Waiting 5 seconds for responses...
 Discovery finished! Found: 0 devices
 Discovered 0 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery complete.
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Using proactor: IocpProactor
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Using proactor: IocpProactor
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Using proactor: IocpProactor
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Using proactor: IocpProactor
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Using proactor: IocpProactor
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Using proactor: IocpProactor
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Using proactor: IocpProactor
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Switching status
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Using proactor: IocpProactor
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Switching status
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Using proactor: IocpProactor
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Switching status
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Switching status
+Using proactor: IocpProactor
+Initializing 192.168.100.112 of type <class 'kasa.iot.iotplug.IotPlug'>
+Performing the initial update to obtain sysinfo
+192.168.100.112 >> {"system":{"get_sysinfo":{}}}
+Unable to query the device: 192.168.100.112, not retrying: Unable to connect to the device: 192.168.100.112:9999: [WinError 1225] Il computer remoto ha rifiutato la connessione di rete
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Switching status
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Switching status
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Switching status
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743519363541,"terminal_uuid":"lm2TOPNNyPb4VIId9FDi4A==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxextWNkGXqO2z3OgPwfvAjo14lIEkOCmpibS/stpAIYEaIG7ZwlH3ielX9+Vd15YbUM7WfSG/sGlh1i8x5/rwL753UzcGfm5rzdm8F3x7HLNL10mMbV2v5T6Jpa4a5NR3u8DMGRhWsGbckjJhQZPLLVZ5XEnzWJykBaf3zwmfHwIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'B1ssSjrgxiHhEuQ5U5UN3H+KJGnpmr46tWCPyoGbYO+a2XCNem+PZfWBBB6d715DMWE4REps6D1kdk6Xq+cHUkyJRFRohXe3sYEFd1yUJzhPv6cQpWytjVPYJkQpbmAKOVWkp/cCNT790TnnndU3VcwB7XKTnzKKH69obhZ+eSM='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=ED86BE8584B525B438A4E8A4E6A40EA4
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743519363649,"terminal_uuid":"lm2TOPNNyPb4VIId9FDi4A==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=ED86BE8584B525B438A4E8A4E6A40EA4
+192.168.100.112 << {'error_code': 0}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001B5AE938A70>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 23, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001B5AE8F7770>, 692919.703)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001B5AE8E2330>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 23, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Switching status
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743520019490,"terminal_uuid":"U8t4UyvT28c7K17QONqOZQ==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCWW10WToh8i17SMXUTbfNbKcIydBxnLyknC6ceUt0HNVlHEsp9taxagQtzbhjjET1BzbwW5p3C/JCzCyWt37M0JVyqemDV2sDTivRwDSRDD+Jc4Xy1QftiEcinv1eEjZTCF4kz9T/Vy8D3EZGFFX7CWAiHeNy8sNG9CcKPY10xIwIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'jZnAnz+k0dbWyCJilOzQ5Sk18c0jnNVqx63sthj/Kbnt+tI+eNfiBbkbVdfSPTZQU/m3S57cNH8OaLuT9eID47ZMrWDCS2v5XZoxAewPvWsxSrCDbPJ7B3nVBnuxSTdOZfzPyX6Jt0RKOsP3t6XG59naJir37kUvB87arInYlnI='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=C49BC0A680778261AA012B023F327733
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743520019699,"terminal_uuid":"U8t4UyvT28c7K17QONqOZQ==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=C49BC0A680778261AA012B023F327733
+192.168.100.112 << {'error_code': 0}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002362F1280B0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002362F133890>, 693575.781)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000002362F1280E0>
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Switching status
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743520935103,"terminal_uuid":"/KJtrgZGnUKXqiNT//qKuQ==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwPW/varHuzsuJmaF0qI+wOF6xjgki0DmTSTWOrsoTQ0nsAHbxAskHFmGXAq8CRTKTusQhtqPaa9RbLwVk+Gh54oX7Ofr0SWpeu+kz5teVzdZqseCY4lAhQyUDY/zDqHcyHX9BcqBdT/9vhRgMJ0fEZId6Au0O+aJ8AG4pcXmxJwIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'J6gBWD4sKVfps8lXjdAHj1i7cxwHkWd+ekHpWH4QY4oSoV7D3569ZUlkRTr+VWjwlt7laEUNE5cl+2bTqxR4uajNDULYuJ6EkK2APdewWr1G5r+qKFUuTbHYFXRqp5luahY9oPPavUUH7aXqlLgMGW3hntcUfvvhToTKKfPZsIg='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=B5B110B44DE497E639C6D4C703D775D7
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743520935253,"terminal_uuid":"/KJtrgZGnUKXqiNT//qKuQ==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=B5B110B44DE497E639C6D4C703D775D7
+192.168.100.112 << {'error_code': 0}
+Switching status
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743520957322,"terminal_uuid":"ozFJenEjkVZ+DSweHYchHg==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDgqgTnyn79Zvvf62TKU6H/g/dCLICAQk/AodLTco36W/IpoGu/X78ZmzU+W6iuPzeCtxoz8bLMRooCWNP8/tsLSvGpqMpjy9ZKAw9rBzkKbV5ULXzNKc/irlXom+knZnB7h13OEyz4JVxW45afDpppgkebZzuYDw+9zSKXWbGp6QIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'GnmLQOFWd2VT+ZabYeAllpPZaul1JQ/ccpueVjzI4eApin5d+eJ0p03M0ohHleWP964w+/pwZ7Kq+mdYGjdnqWslDS4cKuIhPJuxsrxdBY2YKLoaf96MtamyRWy9wQlOaJ6ml2LTk/mu1l7iNVyihYbT8S7W2QMIeCjRZmd81Tk='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=4215D71B8BFB49FC6F8C068F95BFA9BE
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743520957479,"terminal_uuid":"ozFJenEjkVZ+DSweHYchHg==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=4215D71B8BFB49FC6F8C068F95BFA9BE
+192.168.100.112 << {'error_code': 0}
+Switching status
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743520985674,"terminal_uuid":"7H2meAOZnaAPfVxGC+ZJNg==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC6p/bEB2O/zJxDYAZvkhUnUHOUpkDdZDg3N4IBnZ4jn+6LoMppsQrdzOghdFybHHMrTk8Pmmu/sk7CcQUHcqreQIkVyaEO6VgTMm5vE8ef2450BBlkYOYv2Y4Y/Ovi/+Qq3392CFB7zvk68BwjujLg9zyw1jkoqOCUBduEeTu1DQIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'pU/1n4NpSUFLAA4QmwfZB8H1K+moA2EeXZslhqcRh9nt3fKHQQynIe9ZqkHVnpNv8+c0xjFXv17ghzBKjv2MSAD84H9oGMcEgQnA+soLw8lrPFPV/XKS134yEk6rBzhErzU9hbR6tfpLLCe2A1NBLjl6bMQp8C240jRrWlat0Ks='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=96E119E6ED96AA95D8A5F3A442B457B4
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743520986108,"terminal_uuid":"7H2meAOZnaAPfVxGC+ZJNg==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=96E119E6ED96AA95D8A5F3A442B457B4
+192.168.100.112 << {'error_code': 0}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001C82AE189B0>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 23, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001C82ADD7770>, 694491.281)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001C82AE189E0>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 23, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001C82AE19760>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 23, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001C82ADD7890>, 694513.765)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001C82AE19790>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 23, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001C82AE1A1E0>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 23, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001C82AEE18B0>, 694542.203)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001C82AE1A210>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 23, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 devices
+Discovered 1 devices
+Switching status
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Switching status
+Using proactor: IocpProactor
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Switching status
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743522096575,"terminal_uuid":"+cX2dd2+2RkUAEOH9t24xg==","params":{"device_on":true}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD6KE4NEXgCilBJavTSgeASCVndUHxzSeiGCJjC/aFKuViKIi1Ll5ybZCB5QF6nc8i4iHdUCdqLq/S5BDim0RJGTomZyWIrGrMfBKoBVY4/E0hqHUxMtXaxt0mJ7Wfgz1YF9hP6Mg03RAvwmxHMvpF7/iUL/5k9DaWAreZzySrBRQIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'tMdTwIrYBUuiwDJDxGdEIxxbZ0ogKwRqHg7G+lV7AwBHOZ6fzZVZ+YWhmgirRfhqQFLoRFVNEsIKYjh6B1Qk3W1UMwAsRZiaFxQyMFUMXAKRLC7KgzsNHNSolWpAzcTOAO0RIHjQfnBWMPsZdWZGkokNROXSeuhJtn50Zju/PPc='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=34464F4AFC8AC98C90EC02EF2EDFE7DE
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743522096697,"terminal_uuid":"+cX2dd2+2RkUAEOH9t24xg==","params":{"device_on":true}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=34464F4AFC8AC98C90EC02EF2EDFE7DE
+192.168.100.112 << {'error_code': 0}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001C7878DEC60>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 24, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001C7879D7890>, 695652.875)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001C7879A33B0>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 24, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Using proactor: IocpProactor
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Switching status
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743522131715,"terminal_uuid":"S40RfbD7og9yo6kNz3Q2+w==","params":{"device_on":true}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDczW5dPBNgAp1s429jt67G6W7J5ZXvG9oT1oPH+3KKzIlUwWtudwmAjylygcjktKcbe0HDrQRN8DNFTN7/SBZoMEGZmPnW6Ho07W0cJc4VMw8mVVhszjQgFhDHasx0dL4Uaw6XpESk7AZu1VL23/aA5y1sL43vM+wfTg8L1wqHWwIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'LFDUU4lMubQ7Uk56fbVtP6+rjwvRYz9lO7kG3G8CxsPSygSAf5nCFYIEqSPQHkonkOUmb7BXHxHXZ3hzwhedfEgkhDicB+u+ivB1cNpmuPYESQPE1oDH0x4BnmBy4Q/OcgwlOCRrY7tMlAmx4zyKCCCrTp00bUBdEyEFztyvstc='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=026D7E6ABD1A8B19E2297928CD388838
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1743522131840,"terminal_uuid":"S40RfbD7og9yo6kNz3Q2+w==","params":{"device_on":true}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=026D7E6ABD1A8B19E2297928CD388838
+192.168.100.112 << {'error_code': 0}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001F96B4B77D0>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 24, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001F96C56B830>, 695687.859)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001F96C4EF470>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 24, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Using proactor: IocpProactor
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Switching status
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Switching status
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:8080
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Discovery finished! Found: 0 device(s)
+Discovered 0 devices
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+STREAM b'IHDR' 118 13
+STREAM b'IDAT' 143 5333

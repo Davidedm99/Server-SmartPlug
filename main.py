@@ -54,7 +54,7 @@ if __name__ == '__main__':
     ])
 
     # Automatic discover to fill the central box
-    devices = []
+    devices = {}
 
     w = MainWindow(TITLE,ICON_PATH,options,ABOUT_STRINGS, devices)
 
