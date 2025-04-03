@@ -1,3 +1,4 @@
+import asyncio
 import functools
 import logging
 import os
@@ -36,7 +37,19 @@ class MainWindow(tk.Tk):
 
     # Do the discovery with the kasa library
     def python_kasa(self, callback):
-        self.result = TapoPlugs.retrieve_devices()
+        devices = TapoPlugs.retrieve_devices()
+
+        for dev in devices:
+            # Create Tapo object
+            plug = TapoPlugs.TapoPlugs(dev, self.options['Username'].value, self.options['Password'].value)
+            name = devices[dev].config.connection_type.device_family.value
+            # Update the device
+            asyncio.run(plug.update_self())
+
+            #logging.info(f"result is: {plug.status}")
+
+            self.devices[name] = plug
+
         callback()
 
     # Discovery function
@@ -48,76 +61,59 @@ class MainWindow(tk.Tk):
                                   daemon=True)
         thread.start()
 
-    def tapo_update(self, device):
-        thread = threading.Thread(target=self.python_kasa, args=(lambda: self.after(0, self.populate_frame()),),
-                                  name='Discovery',
-                                  daemon=True)
-        thread.start()
-
     # Turn on/off the tapo
-    def toggle_status(self, button, ip, deviceName):
+    def toggle_status(self, button, device_name):
         logging.info("Switching status")
         # Retrieve a specific Tapo
-        device = self.devices[deviceName]
+        device = self.devices[device_name]
 
         if button['text'] == "ON":
-            thread = threading.Thread(
-                target=functools.partial(device.turn_on, lambda: self.after(0, self.update_button),
-                                         device),
-                name='TapoSwitch',
-                daemon=True
-            )
+            asyncio.run(device.turn_off())
         else:
-            thread = threading.Thread(
-                target=functools.partial(device.turn_off, lambda: self.after(0, self.update_button),
-                                         device),
-                name='TapoSwitch',
-                daemon=True
-            )
+            asyncio.run(device.turn_on())
 
-        thread.start()
-
-    def update_button(self, button):
-        button.config(text="ON" if button.text["OFF"] else "OFF")
+        button.config(text="ON" if button['text'] == "OFF" else "OFF")
 
     # Clear the central widget when discovery is started
     def clear_entries(self):
+        self.label.pack_forget()
         for widget in self.widgets:
             widget.destroy()
         self.widgets.clear()
 
-    def update_name(self, event, entry, device):
+    def update_name(self, event):
         event.widget.master.focus_set()
 
     # Function for populating the central part of the interface based on the return of python-kasa
     def populate_frame(self):
-        for i, ip in enumerate(self.result):
-            self.main_frame.columnconfigure(0, weight=1)
+        if len(self.devices) == 0:
+            logging.info("No device(s) found!")
+            self.label = tk.Label(self.main_frame, text="No Device(s) Found!")
+            self.label.pack(expand=True, fill='both')
+        else:
+            for i, device in enumerate(self.devices):
+                self.main_frame.columnconfigure(0, weight=1)
 
-            entry = tk.Entry(self.main_frame)
-            entry.insert(0, self.result[ip].config.connection_type.device_family.value)
-            entry.grid(row=i, column=0, padx=5, pady=2, sticky="we")
+                entry = tk.Entry(self.main_frame)
+                plug_name = device
+                entry.insert(0, plug_name)
+                entry.grid(row=i, column=0, padx=5, pady=2, sticky="we")
 
-            # Rename the entry
-            entry.bind("<Return>", lambda e, ent=entry, dev=ip: self.update_name(e, ent, dev))
+                # Rename the entry
+                entry.bind("<Return>", lambda e, ent=entry, dev=device: self.update_name(e))
 
-            label = tk.Label(self.main_frame, text=ip)
-            label.grid(row=i, column=1, padx=5, pady=2)
+                label = tk.Label(self.main_frame, text=self.devices[device].ip)
+                label.grid(row=i, column=1, padx=5, pady=2)
 
-            button = tk.Button(
-                self.main_frame,
-                text="OFF" if self.result[ip].is_on else "ON"
-            )
+                button = tk.Button(
+                    self.main_frame,
+                    text="ON" if self.devices[device].status else "OFF",
+                )
 
-            button.config(command=partial(self.toggle_status, button, ip, entry.get()))
-            button.grid(row=i, column=2, padx=5, pady=2)
+                button.config(command=partial(self.toggle_status, button, plug_name))
+                button.grid(row=i, column=2, padx=5, pady=2)
 
-            self.widgets.extend([entry, label, button])
-
-            # Create Tapo object
-            plug = TapoPlugs.TapoPlugs(ip, self.options['Username'].value, self.options['Password'].value)
-            plug.update_self()
-            self.devices[entry.get()] = plug
+                self.widgets.extend([entry, label, button])
 
     def show_about(self):
         x, y = self.winfo_pointerxy()
@@ -171,6 +167,8 @@ class MainWindow(tk.Tk):
         self.devices = devices
         self.widgets = []
         self.result = []
+        self.label = None
+        self.response = None
 
         # About and options
         header_frame = bordered_panel(self)
@@ -189,6 +187,9 @@ class MainWindow(tk.Tk):
         self.main_frame = bordered_panel(self)
         self.rowconfigure(1, weight=4)
         self.main_frame.grid(row=1, sticky='nwes', pady=5)
+
+        self.label = tk.Label(self.main_frame, text="No Device(s) Found!")
+        self.label.pack(expand=True, fill='both')
 
 
         # Console

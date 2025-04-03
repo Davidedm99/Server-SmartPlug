@@ -8,6 +8,7 @@ class TapoPlugs:
         self.ip = ip
         self.username = username
         self.password = password
+        self.status = False
 
     # For TapoP100 Authentication is needed for each command
     async def discover_self(self):
@@ -21,6 +22,7 @@ class TapoPlugs:
     async def update_self(self):
         device = await self.discover_self()
         await device.update()
+        self.status = device.is_on
 
     # Turn on the specific device
     async def turn_on(self):
@@ -29,12 +31,15 @@ class TapoPlugs:
         await device.turn_on()
         await device.update()
 
+        print(device.is_on)
+
     # Turn off the specific device
     async def turn_off(self):
         device = await self.discover_self()
 
         await device.turn_off()
         await device.update()
+        print(device.is_on)
 
 
 # FUNCTION NOT DEVICE-DEPENDANT
