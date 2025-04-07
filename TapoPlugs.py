@@ -31,15 +31,12 @@ class TapoPlugs:
         await device.turn_on()
         await device.update()
 
-        print(device.is_on)
-
     # Turn off the specific device
     async def turn_off(self):
         device = await self.discover_self()
 
         await device.turn_off()
         await device.update()
-        print(device.is_on)
 
 
 # FUNCTION NOT DEVICE-DEPENDANT

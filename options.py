@@ -1,11 +1,12 @@
 import json
+import logging
 from pathlib import Path
 
 from platformdirs import user_config_dir
 
 
 class Option:
-    def __init__(self, name: str, value: str | Path | bool | int | float, visible=True):
+    def __init__(self, name: str, value: str | Path | bool | int | float | dict, visible=True):
         self.name = name
         self.value = value
         self.visible = visible
@@ -20,6 +21,7 @@ class Options(dict[str, Option]):
     def __init__(self, app_author: str, app_name: str, default_values: list[Option]):
         super().__init__()
         self.file_path = Path(user_config_dir(appname=app_name, appauthor=app_author, ensure_exists=True),'options.json')
+        logging.info(self.file_path)
         for o in default_values:
             self[o.name] = o
 

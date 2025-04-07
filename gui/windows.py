@@ -1,5 +1,5 @@
 import asyncio
-import functools
+import json
 import logging
 import os
 import threading
@@ -42,13 +42,10 @@ class MainWindow(tk.Tk):
         for dev in devices:
             # Create Tapo object
             plug = TapoPlugs.TapoPlugs(dev, self.options['Username'].value, self.options['Password'].value)
-            name = devices[dev].config.connection_type.device_family.value
             # Update the device
             asyncio.run(plug.update_self())
 
-            #logging.info(f"result is: {plug.status}")
-
-            self.devices[name] = plug
+            self.devices[dev] = plug
 
         callback()
 
@@ -81,8 +78,25 @@ class MainWindow(tk.Tk):
             widget.destroy()
         self.widgets.clear()
 
-    def update_name(self, event):
+    # Look for existing names of a relative plug in the config option and retrieve them
+    def retrieve_plug_name(self, device_ip):
+        data = json.loads(self.options['SavedPlugs'].value)
+        if device_ip in data:
+            return data[device_ip]
+        else:
+            return next((name for name, plug in self.devices.items() if plug.ip == device_ip), 'New Smart Plug')
+
+    # Update the name of a plug and save it into the config for future use
+    def update_name(self, event, entry, device_ip):
+        # Open JSON with all the names and edit the one associated with the device ip
+        data = json.loads(self.options['SavedPlugs'].value)
+        data[device_ip] = entry.get()
+        # Update the options value
+        self.options['SavedPlugs'].value = json.dumps(data)
+        Options.save(self.options)
         event.widget.master.focus_set()
+
+        #Update the local dictionary
 
     # Function for populating the central part of the interface based on the return of python-kasa
     def populate_frame(self):
@@ -95,12 +109,11 @@ class MainWindow(tk.Tk):
                 self.main_frame.columnconfigure(0, weight=1)
 
                 entry = tk.Entry(self.main_frame)
-                plug_name = device
-                entry.insert(0, plug_name)
+                entry.insert(0, self.retrieve_plug_name(self.devices[device].ip))
                 entry.grid(row=i, column=0, padx=5, pady=2, sticky="we")
 
                 # Rename the entry
-                entry.bind("<Return>", lambda e, ent=entry, dev=device: self.update_name(e))
+                entry.bind("<Return>", lambda e, ent=entry, dev=self.devices[device].ip: self.update_name(e, ent, dev))
 
                 label = tk.Label(self.main_frame, text=self.devices[device].ip)
                 label.grid(row=i, column=1, padx=5, pady=2)
@@ -110,7 +123,7 @@ class MainWindow(tk.Tk):
                     text="ON" if self.devices[device].status else "OFF",
                 )
 
-                button.config(command=partial(self.toggle_status, button, plug_name))
+                button.config(command=partial(self.toggle_status, button, self.devices[device].ip))
                 button.grid(row=i, column=2, padx=5, pady=2)
 
                 self.widgets.extend([entry, label, button])
@@ -191,7 +204,6 @@ class MainWindow(tk.Tk):
         self.label = tk.Label(self.main_frame, text="No Device(s) Found!")
         self.label.pack(expand=True, fill='both')
 
-
         # Console
         console_frame = bordered_panel(self)
         console_frame.columnconfigure(0, weight=1)
@@ -229,6 +241,7 @@ class MainWindow(tk.Tk):
 
         # Automatic discovery at startup
         self.tapo_discovery()
+
 
 if __name__ == '__main__':
     from options import Option

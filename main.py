@@ -1,4 +1,3 @@
-import asyncio
 import json
 import threading
 from pathlib import Path
@@ -6,7 +5,6 @@ from pathlib import Path
 from starlette.requests import Request
 from starlette.responses import Response
 
-import TapoPlugs
 from gui.options_window import Option
 from gui.windows import MainWindow
 from log_manager import init_logging
@@ -51,6 +49,7 @@ if __name__ == '__main__':
         #Option('Bool', True),
         Option('Cartella', Path.cwd()),
         Option('File', Path(__file__)),
+        Option('SavedPlugs', "{}", False),
     ])
 
     # Automatic discover to fill the central box
