@@ -11,7 +11,7 @@ import pyperclip
 from PIL import Image, ImageTk
 from pathlib import Path
 
-import TapoPlugs
+import tapo_plugs
 import log_manager
 from gui.components import bordered_panel, big_button, small_button
 from gui.options_window import OptionsGUI
@@ -37,11 +37,11 @@ class MainWindow(tk.Tk):
 
     # Do the discovery with the kasa library
     def python_kasa(self, callback):
-        devices = TapoPlugs.retrieve_devices()
+        devices = tapo_plugs.retrieve_devices()
 
         for dev in devices:
             # Create Tapo object
-            plug = TapoPlugs.TapoPlugs(dev, self.options['Username'].value, self.options['Password'].value)
+            plug = tapo_plugs.TapoPlugs(dev, self.options['Username'].value, self.options['Password'].value)
             # Update the device
             asyncio.run(plug.update_self())
 
@@ -59,23 +59,33 @@ class MainWindow(tk.Tk):
         thread.start()
 
     # Turn on/off the tapo
-    def toggle_status(self, button, device_name):
+    # TODO: device status is not updated hence doesnt send the right command, while in the device class is right, here is not
+    def toggle_status(self, device):
         logging.info("Switching status")
-        # Retrieve a specific Tapo
-        device = self.devices[device_name]
 
-        if button['text'] == "ON":
+        if device.status:
             asyncio.run(device.turn_off())
+            logging.info("device is: ")
+            logging.info(device.status)
         else:
             asyncio.run(device.turn_on())
+            logging.info("device is: ")
+            logging.info(device.status)
 
-        button.config(text="ON" if button['text'] == "OFF" else "OFF")
+        # update button toggle
+        self.update_buttons(device)
+
+    # Method to update the button in the main frame
+    def update_buttons(self, device):
+        if device.ip in self.widgets:
+            self.widgets[device.ip][2]['text'] = "OFF" if device.status else "ON"
 
     # Clear the central widget when discovery is started
     def clear_entries(self):
         self.label.pack_forget()
-        for widget in self.widgets:
-            widget.destroy()
+        for device_widgets in self.widgets.values():
+            for widget in device_widgets:
+                widget.destroy()
         self.widgets.clear()
 
     # Look for existing names of a relative plug in the config option and retrieve them
@@ -85,6 +95,18 @@ class MainWindow(tk.Tk):
             return data[device_ip]
         else:
             return next((name for name, plug in self.devices.items() if plug.ip == device_ip), 'New Smart Plug')
+
+    # Function to retrieve the plug object knowing the relative IP
+    def retrieve_plug_ip(self, plug_name):
+        saved_plugs = json.loads(self.options['SavedPlugs'].value)
+        for ip, name in saved_plugs.items():
+            if name == plug_name:
+                return ip
+
+    # retrieve the tapo_plug object base don the given IP
+    def retrieve_plug(self, plug_ip):
+        if plug_ip in self.devices:
+            return self.devices[plug_ip]
 
     # Update the name of a plug and save it into the config for future use
     def update_name(self, event, entry, device_ip):
@@ -123,10 +145,12 @@ class MainWindow(tk.Tk):
                     text="ON" if self.devices[device].status else "OFF",
                 )
 
-                button.config(command=partial(self.toggle_status, button, self.devices[device].ip))
+                button.config(command=partial(self.toggle_status, self.devices[device]))
                 button.grid(row=i, column=2, padx=5, pady=2)
 
-                self.widgets.extend([entry, label, button])
+                #self.widgets.extend([entry, label, button])
+                # save a reference to windows element relative to the device
+                self.widgets[device] = ([entry, label, button])
 
     def show_about(self):
         x, y = self.winfo_pointerxy()
@@ -164,7 +188,7 @@ class MainWindow(tk.Tk):
     def _copy_console(self):
         pyperclip.copy(self.console_text.get('1.0', tk.END))
 
-    def __init__(self, title: str, icon_path: Path, options: Options, about: list[str], devices: Dict[str, TapoPlugs]):
+    def __init__(self, title: str, icon_path: Path, options: Options, about: list[str], devices: Dict[str, tapo_plugs]):
         tk.Tk.__init__(self)
         # Window properties
         self.title(title)
@@ -178,7 +202,7 @@ class MainWindow(tk.Tk):
         self.options = options
         self.about = about
         self.devices = devices
-        self.widgets = []
+        self.widgets = {}
         self.result = []
         self.label = None
         self.response = None
