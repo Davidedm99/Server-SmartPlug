@@ -58,27 +58,56 @@ class MainWindow(tk.Tk):
                                   daemon=True)
         thread.start()
 
+    def tapo_command(self, device_ip, command, callback):
+        device = self.devices[device_ip]
+
+        if command == 'on':
+            status = asyncio.run(device.turn_on())
+        else:
+            status = asyncio.run(device.turn_off())
+
+        callback(status)
+
     # Turn on/off the tapo
     # TODO: device status is not updated hence doesnt send the right command, while in the device class is right, here is not
-    def toggle_status(self, device):
-        logging.info("Switching status")
+    def toggle_status(self, device_ip):
+        command = 'off' if self.devices[device_ip].status else 'on'
 
-        if device.status:
+        logging.info("command is")
+        logging.info(command)
+
+        thread = threading.Thread(target=self.tapo_command,
+                                  args=(
+                                        device_ip,
+                                        command,
+                                        lambda status: self.after(0, self.update_buttons, device_ip, status)
+                                  ),
+                                  name='Command',
+                                  daemon=True)
+
+        thread.start()
+
+        '''logging.info("Switching status from ")
+        device = self.devices[device_ip]
+        logging.info(device.status)
+
+        if self.devices[device_ip].status:
             asyncio.run(device.turn_off())
-            logging.info("device is: ")
-            logging.info(device.status)
         else:
             asyncio.run(device.turn_on())
-            logging.info("device is: ")
-            logging.info(device.status)
+
+        logging.info("device is: ")
+        logging.info(device.status)
 
         # update button toggle
-        self.update_buttons(device)
+        self.update_buttons(device_ip)'''
 
-    # Method to update the button in the main frame
-    def update_buttons(self, device):
-        if device.ip in self.widgets:
-            self.widgets[device.ip][2]['text'] = "OFF" if device.status else "ON"
+    # Method to update the button in the main frame based on the plug status
+    # TODO: check if the status of the plug is actually updated and is not referencing to a different state or plug
+    def update_buttons(self, device_ip, status):
+        self.widgets[device_ip][2]['text'] = 'ON' if status else 'OFF'
+        # I have to manually update the status for some reason even though I update it in the tapo_plugs class
+        self.devices[device_ip].status = status
 
     # Clear the central widget when discovery is started
     def clear_entries(self):
@@ -145,7 +174,7 @@ class MainWindow(tk.Tk):
                     text="ON" if self.devices[device].status else "OFF",
                 )
 
-                button.config(command=partial(self.toggle_status, self.devices[device]))
+                button.config(command=partial(self.toggle_status, self.devices[device].ip))
                 button.grid(row=i, column=2, padx=5, pady=2)
 
                 #self.widgets.extend([entry, label, button])

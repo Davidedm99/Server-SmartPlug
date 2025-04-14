@@ -30,8 +30,10 @@ class TapoPlugs:
 
         await device.turn_on()
         await device.update()
-        logging.info(device.is_on)
+        #logging.info(device.is_on)
         await device.disconnect()
+
+        return device.is_on
 
     # Turn off the specific device
     async def turn_off(self):
@@ -39,8 +41,10 @@ class TapoPlugs:
 
         await device.turn_off()
         await device.update()
-        logging.info(device.is_on)
+        #logging.info(device.is_on)
         await device.disconnect()
+
+        return device.is_on
 
 
 # FUNCTION NOT DEVICE-DEPENDANT

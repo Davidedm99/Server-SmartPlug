@@ -36,11 +36,11 @@ async def request_handler(request: Request):
             match command.lower():
                 case "on":
                     await plug.turn_on()
-                    w.update_buttons(plug)
+                    w.update_buttons(plug_ip, True)
                     return Response(content=f"Plug switched {command.lower()}", status_code=200)
                 case "off":
                     await plug.turn_off()
-                    w.update_buttons(plug)
+                    w.update_buttons(plug_ip, False)
                     return Response(content=f"Plug switched {command.lower()}", status_code=200)
                 case _:
                     return Response(content="Missing command in SmartPlugCommand", status_code=400)
