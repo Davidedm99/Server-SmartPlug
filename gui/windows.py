@@ -62,19 +62,16 @@ class MainWindow(tk.Tk):
         device = self.devices[device_ip]
 
         if command == 'on':
-            status = asyncio.run(device.turn_on())
+            asyncio.run(device.turn_on())
         else:
-            status = asyncio.run(device.turn_off())
+            asyncio.run(device.turn_off())
 
-        callback(status)
+        callback(device.status)
 
     # Turn on/off the tapo
     # TODO: device status is not updated hence doesnt send the right command, while in the device class is right, here is not
     def toggle_status(self, device_ip):
         command = 'off' if self.devices[device_ip].status else 'on'
-
-        logging.info("command is")
-        logging.info(command)
 
         thread = threading.Thread(target=self.tapo_command,
                                   args=(
@@ -87,27 +84,12 @@ class MainWindow(tk.Tk):
 
         thread.start()
 
-        '''logging.info("Switching status from ")
-        device = self.devices[device_ip]
-        logging.info(device.status)
-
-        if self.devices[device_ip].status:
-            asyncio.run(device.turn_off())
-        else:
-            asyncio.run(device.turn_on())
-
-        logging.info("device is: ")
-        logging.info(device.status)
-
-        # update button toggle
-        self.update_buttons(device_ip)'''
-
     # Method to update the button in the main frame based on the plug status
     # TODO: check if the status of the plug is actually updated and is not referencing to a different state or plug
     def update_buttons(self, device_ip, status):
-        self.widgets[device_ip][2]['text'] = 'ON' if status else 'OFF'
-        # I have to manually update the status for some reason even though I update it in the tapo_plugs class
-        self.devices[device_ip].status = status
+        plug_state = 'ON' if status else 'OFF'
+        logging.info(f"Plug has been turned {plug_state}")
+        self.widgets[device_ip][2]['text'] = plug_state
 
     # Clear the central widget when discovery is started
     def clear_entries(self):
