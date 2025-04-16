@@ -1,0 +1,1942 @@
+C:\Users\Davide\AppData\Local\I3Lab - Politecnico di Milano\Server SmartPlug\options.json
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:7071
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744635437566,"terminal_uuid":"MyB0JTLGUqlDGxurBbahcg==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHAmuIpVicK3kGl1d8ltnh9S61eaWXqbz3pswBGRcnFuaZOzU2R9ajGp7DgsKkfxeEq6P49KHsOXqLKg3E3Vi2kIaJFtuV/RPqqEPg1APpQlEKQChrJcJuNyRkGvRNHgdQ56hmfZETXLtPb43uRF0a8nlVIm/EFEdGSQb4ihs7DwIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'Kf7LWXamPXG0T4rgXg5uIm9P6nYpUbA9novagni9p5fkh0Dmv0RyczVagu9eFwcbGoc2SOYO19j4Uo4+YRGpS+RpwHHtT/rPZiOZhGq5ubjrSzUtQShNNW8sTnl2pLnUZVz9C0n2i02+YrahMXkF14Hc8F28LB2yItxaJmhVkPQ='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=99A710A38CE348E106C1E4C0C3D0BAD0
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744635437714,"terminal_uuid":"MyB0JTLGUqlDGxurBbahcg==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=99A710A38CE348E106C1E4C0C3D0BAD0
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': False,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 0,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -51,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744635438050,"terminal_uuid":"MyB0JTLGUqlDGxurBbahcg==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=99A710A38CE348E106C1E4C0C3D0BAD0
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744635431}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': False,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744635449740,"terminal_uuid":"Jsx6cVEOcP8pzC8dmc8IYA==","params":{"device_on":true}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1t0TROpkw2x3vlMue3zy8/kmTciJFrxUYXRijPHAYTvq2NM9QIBXqwEhvOEaFghdTT+VVZcAI4tg6t78jly44taKjaDwvqAbHYBim8CDAdp/9FCBLWoxJZ6FR29z5KvOW+GmS/q1ashbRKTuLJHO9FiwDn4SwF4bRd4VmVozsBwIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'MAZfDNRtc0NWRWJKYfODEVui+wFsqPv5ToXGUhSrbE6GO7TL0TEr8QI5Izic8b13UC3Z4nmqSUhhMgwGQv5XbuF2kcygAbHo4E8Dzafx2TVY16R2+ztLsgmhJncDiSUW/TRHwDa75a82uLIs0gQyDDwbmmReC7DB2wHkKz4+1KQ='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=1E95ED90DAC0ABC2B0E200E305F35DF3
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744635449867,"terminal_uuid":"Jsx6cVEOcP8pzC8dmc8IYA==","params":{"device_on":true}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=1E95ED90DAC0ABC2B0E200E305F35DF3
+192.168.100.112 << {'error_code': 0}
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744635450242,"terminal_uuid":"Jsx6cVEOcP8pzC8dmc8IYA==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=1E95ED90DAC0ABC2B0E200E305F35DF3
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': True,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 1,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -53,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744635450599,"terminal_uuid":"Jsx6cVEOcP8pzC8dmc8IYA==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=1E95ED90DAC0ABC2B0E200E305F35DF3
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744635443}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': True,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Plug has been turned ON
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744635463204,"terminal_uuid":"91oS2gbSNdWkqtsqMf6eIQ==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxaAEP3muHCmJrxTK8m6xU82OvNcEignR0jetX38an2v7A3rTWff/3c0uNGmYNI+7Ey7Zx8fyaDsIComq9ak6UcGi3wZz15xK2HYeVWvbNMNbOMwuue5BSAKXKnsZrlgIUjbsjiUdxZObMrQwxwl1DLvU71IrZsSyA+tDd+HMxCwIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'SdsCbM9l2H3rs1oNAK6dkoguIcdlxPUKIhzjdjptC/8YpJcHjsWjMqPIRbkewqV9wYwrvjJBorTvEHvZlMgkOk3qLGyVcJYu690GvIXFvEaNyP9zj1qT/8D6cdU/XueKR6Z7pkYIyaJg9Le4y+DzXVbO/PpwtYU1B6/Xocpxofs='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=59E137E5D4A5E3A7928789863196BC96
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744635463334,"terminal_uuid":"91oS2gbSNdWkqtsqMf6eIQ==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.2349999999987631 seconds to send request
+Posting to http://192.168.100.112/app?token=59E137E5D4A5E3A7928789863196BC96
+192.168.100.112 << {'error_code': 0}
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744635464260,"terminal_uuid":"91oS2gbSNdWkqtsqMf6eIQ==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=59E137E5D4A5E3A7928789863196BC96
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': False,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 0,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -52,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744635464620,"terminal_uuid":"91oS2gbSNdWkqtsqMf6eIQ==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.23400000000037835 seconds to send request
+Posting to http://192.168.100.112/app?token=59E137E5D4A5E3A7928789863196BC96
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744635457}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': False,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Plug has been turned OFF
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000024F10AC9CD0>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 25, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000024F10A6FBF0>, 8250.281)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000024F10AC9E20>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 25, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+C:\Users\Davide\AppData\Local\I3Lab - Politecnico di Milano\Server SmartPlug\options.json
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:7071
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Discovery finished! Found: 0 device(s)
+Discovered 0 devices
+No device(s) found!
+Discovery started...
+Using proactor: IocpProactor
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814777397,"terminal_uuid":"7xSaIFmnaqXvmSfR+gpqsQ==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDUK+pue7zzBjboFWVC2b2IVTW3Iw1NXBNKg6BddxjD+ZAYvXnhSJlMHRIvd+VuFKsEOwAFoOExZRcL+Js5ucNNUnppTC3VgdbC6usd2/OHcjbnWqfwYuy7ps88CR4h/FzQDtVpQyfHLMOU5ZWy1WVCNg2sa5Ii1j4l2NIL/if4wQIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'y+ljqNXm+afFRfTci3HHYbkqVbBDnML2Y8SRH20e7wWBnAoz/Ws+zjzNRfQxkPlY6l4OgPVhYFqjA2vmIIRPGnr9rgwSAo855MMTIhmGVBqxxAozdXl7bP+uW3D0EYulRMRzYmR/5djxD+cu/za6gkmi3Q4fPHsh/saGBnqHVhM='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=2ADE49D17221CB2656568A554C652A64
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814777516,"terminal_uuid":"7xSaIFmnaqXvmSfR+gpqsQ==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=2ADE49D17221CB2656568A554C652A64
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': False,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 0,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -51,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814777839,"terminal_uuid":"7xSaIFmnaqXvmSfR+gpqsQ==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.235000000015134 seconds to send request
+Posting to http://192.168.100.112/app?token=2ADE49D17221CB2656568A554C652A64
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744814766}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': False,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000020689DFF5F0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000020689E87D70>, 187590.046)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000020689EC1EB0>
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814799517,"terminal_uuid":"1TGItSa44YixpaP7r7Eipw==","params":{"device_on":true}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDCavnahtXDSjGzn+UhBhxVeaerUs/3Y1UmDyobrVjQtxb6QzUPyqlrUYwAN0QQbaN5YkCLF/PpTn3Ktk0sLUTayh06YqVIXJVYK0G1YJP7isu9PzsqpHjIHM8ZMNzTXAs2fBCZqb67hPZ7Ku4/XDOckFuQFis+EgDzE2gKE5jOzwIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'OotsCo7eYG0U3wRCPFGCWm0tt1kBBWQs9IbEdX2aCsNcwu2SoZqfEeBFbKR4WrqAnUxWpTUAyTQEO4OnT9W9Sgh9BFwmB7ZU5/SByfxkMTy8kO6icZQMtmKCuApLhv+kJys4zTE2eIfSuIu2a1ky+4ID8YsYTdT1kbZk+bJh5ZU='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=4BA62AAF393F013B887B1479D8591E58
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814799750,"terminal_uuid":"1TGItSa44YixpaP7r7Eipw==","params":{"device_on":true}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=4BA62AAF393F013B887B1479D8591E58
+192.168.100.112 << {'error_code': 0}
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814800115,"terminal_uuid":"1TGItSa44YixpaP7r7Eipw==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.23399999999674037 seconds to send request
+Posting to http://192.168.100.112/app?token=4BA62AAF393F013B887B1479D8591E58
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': True,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 1,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -50,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814800510,"terminal_uuid":"1TGItSa44YixpaP7r7Eipw==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.23499999998603016 seconds to send request
+Posting to http://192.168.100.112/app?token=4BA62AAF393F013B887B1479D8591E58
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744814789}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': True,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Plug has been turned ON
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814810057,"terminal_uuid":"fX4IS2iYjBJCJXUBXcKraQ==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDbZJV9lus2v09x8N8sq8RUXRbyYjITqiE6QWave2qNfNqPQgzCpxjB7V7gbtyVHNmapBrWcls/No1Zt/5UO9V4W7x5SsHGA+1Psc51Ob5yOKClYyCUhIErsfzT8NHSKg/ab+pyscGCNh+0H62Xtrw0rvkAzwzzBFd7cZHdmZK/eQIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': '0n3EO4c4REovMqzhu9UWt/F1AuygTiQwUiRKQNoEYRnGpZ8kT8uPOViygXBWLWmw744+k7s11dtz2NXI6Z2SX9oWiEnNrr+P9ls6hHRFgLcgQ2vFGUTAoU8pM7o1IXVHN+L0JmLTYtnJOd/HEFBFGlRlLL6n60t+DfTdQ0Dze0Y='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=7BDA53D9DAE946E882F8CCF82EF809F8
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814810190,"terminal_uuid":"fX4IS2iYjBJCJXUBXcKraQ==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=7BDA53D9DAE946E882F8CCF82EF809F8
+192.168.100.112 << {'error_code': 0}
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814810546,"terminal_uuid":"fX4IS2iYjBJCJXUBXcKraQ==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=7BDA53D9DAE946E882F8CCF82EF809F8
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': False,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 0,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -51,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814810894,"terminal_uuid":"fX4IS2iYjBJCJXUBXcKraQ==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.23499999998603016 seconds to send request
+Posting to http://192.168.100.112/app?token=7BDA53D9DAE946E882F8CCF82EF809F8
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744814799}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': False,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Plug has been turned OFF
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814818791,"terminal_uuid":"xIEYUm+CYbKs9gyX1itogQ==","params":{"device_on":true}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDj6mNiIYZTxHfNe8DTJfhByAvDZQfvaZpdltfy9c1FG239z2eZSTJuZRPBbFQ2Q4y884AGzglT5+zh8gNaTOpuq9newlFGaRyPFctrSLUUO64Dh8aD95nZRKEx715p/EqNTrmJlfeYd++pLRWxIT783k6OlO2pl9XGp4sGS4mCCQIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'M0bB2FaE2JZtsDd/+/0YzDYEFgXEEdMmfkKZvUdgdP+iwLG8e7nAffolrIa8CUkZKAXr1UNpsDotT41MnXkyTvxjdAHkSlZVLzOEed08btYTU85MaBIPR4B1NM6vRAzhqcYmQ8AaY6WfJlTX2SsABFs5NXo2xA3+IT840fmkD1Y='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=78B073B6CBD64ED51AE558E472F4DBF4
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814818930,"terminal_uuid":"xIEYUm+CYbKs9gyX1itogQ==","params":{"device_on":true}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=78B073B6CBD64ED51AE558E472F4DBF4
+192.168.100.112 << {'error_code': 0}
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814819279,"terminal_uuid":"xIEYUm+CYbKs9gyX1itogQ==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=78B073B6CBD64ED51AE558E472F4DBF4
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': True,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 1,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -52,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814819604,"terminal_uuid":"xIEYUm+CYbKs9gyX1itogQ==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.23399999999674037 seconds to send request
+Posting to http://192.168.100.112/app?token=78B073B6CBD64ED51AE558E472F4DBF4
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744814808}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': True,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Plug has been turned ON
+C:\Users\Davide\AppData\Local\I3Lab - Politecnico di Milano\Server SmartPlug\options.json
+Discovery started...
+Using proactor: IocpProactor
+Listening on 127.0.0.1:7071
+[DISCOVERY] 255.255.255.255 >> {'system': {'get_sysinfo': {}}}
+Waiting 5 seconds for responses...
+Using proactor: IocpProactor
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+Discovery finished! Found: 1 device(s)
+Discovered 1 devices
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814975484,"terminal_uuid":"KzmaeEMZKH1ss7babEAh8g==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC6qROHhXvD2j2RzezRE3uuYeqb4/JaDnnykBbjTIoQFCeffny5UQkimJv+n88PvgQM/jSwQrmzWSUHZoJ3bEGJMGwx/ACFTODK/RFGi69R4xY/vIkh3Gwcb/0PLU7Mkg20CgC9/lLzfOFYypB2BzN8n5fSsIMvtBLX0jFcIwwVKQIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'I8p/65/J9uF/2FFOun8XoSSQU/elxyw5J7bd2hVEGgst1XA4GqxTuG60FBAyAFodBNN24Yx+Tps6AzsiROR/2a7Hza0F2iX8TMqNpR/4Ooo/ehFMFMpkzXhvsxEK4rWM9wXiJxHbG7vyTDAB39CywvBq2Rb/Rm0PpJ4GCy2urvA='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=47A76BA5AA85BC84DC94D7946F94E294
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814975619,"terminal_uuid":"KzmaeEMZKH1ss7babEAh8g==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=47A76BA5AA85BC84DC94D7946F94E294
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': True,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 157,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -50,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814975967,"terminal_uuid":"KzmaeEMZKH1ss7babEAh8g==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.235000000015134 seconds to send request
+Posting to http://192.168.100.112/app?token=47A76BA5AA85BC84DC94D7946F94E294
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744814964}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': True,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814978863,"terminal_uuid":"VJFejL02WlwiKm0vVK2Tbw==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPfzlppf5t353VYVYIbp2VnVAxug5jjA459s39mNIe4Q+0X6Y43rDO3dATHdwUMkaCmqHA57/iKeEvQoyimz//FFKxspcZLaTeJ1Ujt0WJXup58oTxI4kQjX2DL/OA254wkO3DXTLj7OPnpC4FpZ99QOat5/PLIVvKWnNyFfeL1wIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'rFDrlLO7pgleepSoAuxGrzJ9AAMt0mF6LEI5EPjuxOkwlSaYY5iaGrZso9hWnbUFpffScwYqWmxul1UxVZVgbXaR6qTFt1pxz79EEbeEB/0uykr9tCpH0PnUpPar2rU2goXVSZ7As4EddSmql+6PGowbj8jziowtAhPpWZko6rA='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=9616E52AD6EBE7FDF69DEE9E6EAE62AF
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814979019,"terminal_uuid":"VJFejL02WlwiKm0vVK2Tbw==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=9616E52AD6EBE7FDF69DEE9E6EAE62AF
+192.168.100.112 << {'error_code': 0}
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814979380,"terminal_uuid":"VJFejL02WlwiKm0vVK2Tbw==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=9616E52AD6EBE7FDF69DEE9E6EAE62AF
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': False,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 0,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -49,
+                                      'signal_level': 3,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814979702,"terminal_uuid":"VJFejL02WlwiKm0vVK2Tbw==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.23399999999674037 seconds to send request
+Posting to http://192.168.100.112/app?token=9616E52AD6EBE7FDF69DEE9E6EAE62AF
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744814968}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': False,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Plug has been turned OFF
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814986377,"terminal_uuid":"pFQJSNHJXZef5qUGbqKmBQ==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFJ1OycYhTXwi6ulqx0c7UYqis9+soYj5bnRBz7lntKcrEfVmPfmncvZvMP3Lp7N5ggjRNToEw867105b5x5HMBaTJ00RGbKUJv2iBcEdeNfWeTwCyYUEZt8tr62SLieVpIBJv0cFPjTJqJJBkQhPyM3ANcq9C21pOoeKM+GuV9QIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'KF+qYbJaaR3pGEJxm7/uEgFmbOWvW0AH6CjRW/d8dIqNUZWFfZH0zt+rtBgu8QnhY7U0jV8zcqp4z4CvtZqh0KIwEv+PVfkJjPBlTmB2YywM4Tm8Bfno7JrPToK4YDY+04yCU00FlWoD2h/TurJpk8bNLsj7fYruUOweyR0a/h8='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=003E613C7A1CCA1DCF0D970D1D0DB10D
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814986506,"terminal_uuid":"pFQJSNHJXZef5qUGbqKmBQ==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.23499999998603016 seconds to send request
+Posting to http://192.168.100.112/app?token=003E613C7A1CCA1DCF0D970D1D0DB10D
+192.168.100.112 << {'error_code': 0}
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814986805,"terminal_uuid":"pFQJSNHJXZef5qUGbqKmBQ==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=003E613C7A1CCA1DCF0D970D1D0DB10D
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': False,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 0,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -51,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814987131,"terminal_uuid":"pFQJSNHJXZef5qUGbqKmBQ==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=003E613C7A1CCA1DCF0D970D1D0DB10D
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744814976}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': False,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Plug has been turned OFF
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814990745,"terminal_uuid":"u9immbVgkuSiV06pu7ppOQ==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFuLf51Q1a70sAj6gaJA7qda7JFapwkdrrDthCfGwnJ6lkCs44jH7NaxN4TzJfAFNm04B8IcqHvnmgupGf0x1RIYRRtFqe0mZ3hM+sQ6VZ4buS/FHI22ukQ2p9Kzej2ooz8jUEbqUeQ1QD37psNGezBuxqvqIzbhLctVxReqgRjwIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'izEvJseuHz1Yq4CdjIJfOBYWcjqRednUWyznidZJC0lYPct+MXh/Q7ixRBWmVY4P5QsYAG1zGMeTuYKiQKTUz9Mt48ZJ8NAH8236PRUdM8ZbH+PJzmjmMg/Siz07tGn7K8uNskfCbB5o3KvMJLcoldVc7g5PX7PeuRA2CmxUec4='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=BE2C1C2E310EE80F7E1F121FD91F671F
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814990865,"terminal_uuid":"u9immbVgkuSiV06pu7ppOQ==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=BE2C1C2E310EE80F7E1F121FD91F671F
+192.168.100.112 << {'error_code': 0}
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814991201,"terminal_uuid":"u9immbVgkuSiV06pu7ppOQ==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=BE2C1C2E310EE80F7E1F121FD91F671F
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': False,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 0,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -50,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814991529,"terminal_uuid":"u9immbVgkuSiV06pu7ppOQ==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.2340000000258442 seconds to send request
+Posting to http://192.168.100.112/app?token=BE2C1C2E310EE80F7E1F121FD91F671F
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744814980}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': False,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Plug has been turned OFF
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814996304,"terminal_uuid":"nRes3/L2Oqzm3G0nXX53Ow==","params":{"device_on":true}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAwH4HJVHip4TtjmGXikKTa0J7dTgQQDNk3mjPX46r8/KyvmiuoX6Hzts6vlhKFubaI/vuQ1wMcc2S0LWgfQ7nLbhpaN76skUjxt/r/hArPTTladhP8H4+VCAgacjg/FJ1V4rwvBVD8CjxR0fx0wyoAYBrShx5JGXdZAcStUqalwIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'vhba1kxPAgS3Ti+FA7z93MDaDdueq2+tXegF8v1yuybdZ6OHZSvIFhyG9zbF6JS7THcRpThuUV9AbLtvblOymRdHnR2o3tNTTDhsIvLULczl8Q+YbRVRzAxu/tAVDrgi1RMYx2y3Gl6xwUjn+w7qI3uoLj9bQM3lvArgzFfb+jM='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=9FD95DD47B04120289623D6178512250
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814996411,"terminal_uuid":"nRes3/L2Oqzm3G0nXX53Ow==","params":{"device_on":true}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=9FD95DD47B04120289623D6178512250
+192.168.100.112 << {'error_code': 0}
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814996767,"terminal_uuid":"nRes3/L2Oqzm3G0nXX53Ow==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=9FD95DD47B04120289623D6178512250
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': True,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 0,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -50,
+                                      'signal_level': 2,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744814997113,"terminal_uuid":"nRes3/L2Oqzm3G0nXX53Ow==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.23399999999674037 seconds to send request
+Posting to http://192.168.100.112/app?token=9FD95DD47B04120289623D6178512250
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744814985}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': True,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Plug has been turned ON
+Using proactor: IocpProactor
+[DISCOVERY] 192.168.100.112 >> {'system': {'get_sysinfo': {}}}
+Waiting a total of 5 seconds for responses...
+Using SmartDevice for SMART.TAPOPLUG
+Finding protocol for 192.168.100.112
+Finding protocol for DeviceFamily.SmartTapoPlug
+Finding transport for SMART.AES
+Created AES transport for 192.168.100.112
+[DISCOVERY] 192.168.100.112 << {'error_code': 0,
+ 'result': {'device_id': 'REDACTED_c913ec3cd97a6bec2fbb1ee',
+            'device_model': 'P100',
+            'device_type': 'SMART.TAPOPLUG',
+            'factory_default': False,
+            'ip': '192.168.100.112',
+            'is_support_iot_cloud': True,
+            'mac': '74-DA-88-00-00-00',
+            'mgt_encrypt_schm': {'encrypt_type': 'AES',
+                                 'http_port': 80,
+                                 'is_support_https': False,
+                                 'lv': 2},
+            'owner': 'REDACTED_19347acd812465188388075'}}
+Initializing 192.168.100.112 of type <class 'kasa.smart.smartdevice.SmartDevice'>
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744814999959,"terminal_uuid":"MPw6YZDRT2pD7dctp9yiNQ==","params":{"device_on":false}}'
+Will perform handshaking...
+Posting to http://192.168.100.112/app
+Generating keypair
+Handshake request: {'method': 'handshake', 'params': {'key': '-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqLo9HKYC7T3lRJOFMnKwIE2oEwFOsqLPCXSYWn/7MKu0xGW1C/kzjmgnU133kYytt3qmHfKaQ+L3ittT36tIIObiqk4a1Jd+fsO6THZcrR0Fu6QA6O0p3b4Z1hDUZu8SNynYFTL8vJ6aqAiKJs4fDVaa9QQaBnT4KRXiNvrg6OQIDAQAB\n-----END PUBLIC KEY-----\n'}}
+Device responded with: {'error_code': 0, 'result': {'key': 'G/1jVhPzp8nukffsZ0TLrxLpdBFRbAyKtHjSzimkZgKGhy/t2Bf0OFxX43GI05fS/3TPXGFo7/dFP7OhLRvZxXvCS8b2m8NaCgRyZjYU19H+b8+xixKrtaHx/aRG2ihnAoifvHLyrDqxmsXnOOAb4a0ryiw5euKEwkHehqkBqtE='}}
+Handshake with 192.168.100.112 complete
+Posting to http://192.168.100.112/app
+192.168.100.112: logged in with provided credentials
+Posting to http://192.168.100.112/app?token=10D011D201F209F389E385E345E343E3
+Device 192.168.100.112 received an os error, enabling sequential request delay: Server disconnected
+Device 192.168.100.112 got a connection error, will retry 3 times: ('Device connection error: 192.168.100.112: Server disconnected', ServerDisconnectedError('Server disconnected'))
+192.168.100.112 >> '{"method":"set_device_info","request_time_milis":1744815000069,"terminal_uuid":"MPw6YZDRT2pD7dctp9yiNQ==","params":{"device_on":false}}'
+Device 192.168.100.112 waiting 0.23399999999674037 seconds to send request
+Posting to http://192.168.100.112/app?token=10D011D201F209F389E385E345E343E3
+192.168.100.112 << {'error_code': 0}
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744815000401,"terminal_uuid":"MPw6YZDRT2pD7dctp9yiNQ==","params":{"requests":[{"method":"component_nego"},{"method":"get_device_info"},{"method":"get_connect_cloud_state"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=10D011D201F209F389E385E345E343E3
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'component_nego',
+                           'result': {'component_list': [{'id': 'device',
+                                                          'ver_code': 2},
+                                                         {'id': 'firmware',
+                                                          'ver_code': 1},
+                                                         {'id': 'quick_setup',
+                                                          'ver_code': 3},
+                                                         {'id': 'time',
+                                                          'ver_code': 1},
+                                                         {'id': 'wireless',
+                                                          'ver_code': 1},
+                                                         {'id': 'schedule',
+                                                          'ver_code': 2},
+                                                         {'id': 'countdown',
+                                                          'ver_code': 2},
+                                                         {'id': 'antitheft',
+                                                          'ver_code': 1},
+                                                         {'id': 'account',
+                                                          'ver_code': 1},
+                                                         {'id': 'synchronize',
+                                                          'ver_code': 1},
+                                                         {'id': 'sunrise_sunset',
+                                                          'ver_code': 1},
+                                                         {'id': 'led',
+                                                          'ver_code': 1},
+                                                         {'id': 'cloud_connect',
+                                                          'ver_code': 1},
+                                                         {'id': 'iot_cloud',
+                                                          'ver_code': 1},
+                                                         {'id': 'default_states',
+                                                          'ver_code': 1}]}},
+                          {'error_code': 0,
+                           'method': 'get_device_info',
+                           'result': {'avatar': 'plug',
+                                      'default_states': {'state': {},
+                                                         'type': 'last_states'},
+                                      'device_id': 'REDACTED_DB80F24B353338FA05BB18C1C486215',
+                                      'device_on': False,
+                                      'fw_id': 'REDACTED_A25ABDE41405B20C6F98816',
+                                      'fw_ver': '1.3.7 Build 20230711 Rel. '
+                                                '61904',
+                                      'has_set_location_info': True,
+                                      'hw_id': 'REDACTED_5B29645B8150C392284029D',
+                                      'hw_ver': '1.0.0',
+                                      'ip': '192.168.100.112',
+                                      'lang': 'it_IT',
+                                      'latitude': 0,
+                                      'location': '',
+                                      'longitude': 0,
+                                      'mac': '74-DA-88-00-00-00',
+                                      'model': 'P100',
+                                      'nickname': 'I01BU0tFRF9OQU1FIw==',
+                                      'oem_id': 'REDACTED_06C60A9AEEA36A3347B6EBC',
+                                      'on_time': 0,
+                                      'overheated': False,
+                                      'region': 'Europe/Rome',
+                                      'rssi': -49,
+                                      'signal_level': 3,
+                                      'specs': 'EU',
+                                      'ssid': 'I01BU0tFRF9TU0lEIw==',
+                                      'time_diff': 60,
+                                      'type': 'SMART.TAPOPLUG'}},
+                          {'error_code': 0,
+                           'method': 'get_connect_cloud_state',
+                           'result': {'status': 0}}]}}
+Device 192.168.100.112, found required cloud_connect, adding Cloud to modules.
+Device 192.168.100.112, found required device, adding DeviceModule to modules.
+Device 192.168.100.112, found required firmware, adding Firmware to modules.
+Device 192.168.100.112, found required led, adding Led to modules.
+Device 192.168.100.112, found required None, adding OverheatProtection to modules.
+Device 192.168.100.112, found required time, adding Time to modules.
+Querying 192.168.100.112 for modules: Time, Led
+192.168.100.112 multi-request-batch-1-of-1 >> '{"method":"multipleRequest","request_time_milis":1744815000725,"terminal_uuid":"MPw6YZDRT2pD7dctp9yiNQ==","params":{"requests":[{"method":"get_device_time"},{"method":"get_led_info"}]}}'
+Device 192.168.100.112 waiting 0.25 seconds to send request
+Posting to http://192.168.100.112/app?token=10D011D201F209F389E385E345E343E3
+192.168.100.112 multi-request-batch-1-of-1 << {'error_code': 0,
+ 'result': {'responses': [{'error_code': 0,
+                           'method': 'get_device_time',
+                           'result': {'region': 'Europe/Rome',
+                                      'time_diff': 60,
+                                      'timestamp': 1744814989}},
+                          {'error_code': 0,
+                           'method': 'get_led_info',
+                           'result': {'led_rule': 'always',
+                                      'led_status': False,
+                                      'night_mode': {'end_time': 0,
+                                                     'night_mode_type': 'unknown',
+                                                     'start_time': 0,
+                                                     'sunrise_offset': 0,
+                                                     'sunset_offset': 0}}}]}}
+Update completed 192.168.100.112: ['component_nego', 'get_device_info', 'get_connect_cloud_state', 'get_device_time', 'get_led_info']
+Plug has been turned OFF
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001EFB7905EE0>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 25, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000001EFB78C3D70>, 187788.156)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000001EFB7905EB0>
+Exception in default exception handler
+Traceback (most recent call last):
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1847, in call_exception_handler
+    self.default_exception_handler(context)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1821, in default_exception_handler
+    logger.error('\n'.join(log_lines), exc_info=exc_info)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\log_manager.py", line 16, in handle
+    listener(record)
+  File "C:\Users\Davide\Desktop\ServerSmartPlug\gui\windows.py", line 25, in _add_console_line
+    self.console_text.configure(state='normal')
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Davide\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!frame4.!frame.!text"

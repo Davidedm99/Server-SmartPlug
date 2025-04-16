@@ -58,6 +58,7 @@ class MainWindow(tk.Tk):
                                   daemon=True)
         thread.start()
 
+    # Turn on or off the tapo
     def tapo_command(self, device_ip, command, callback):
         device = self.devices[device_ip]
 
@@ -68,10 +69,8 @@ class MainWindow(tk.Tk):
 
         callback(device.status)
 
-    # Turn on/off the tapo
-    # TODO: device status is not updated hence doesnt send the right command, while in the device class is right, here is not
-    def toggle_status(self, device_ip):
-        command = 'off' if self.devices[device_ip].status else 'on'
+    # Start the thread to turn on or off the Tapo
+    def toggle_status(self, device_ip, command):
 
         thread = threading.Thread(target=self.tapo_command,
                                   args=(
@@ -156,7 +155,9 @@ class MainWindow(tk.Tk):
                     text="ON" if self.devices[device].status else "OFF",
                 )
 
-                button.config(command=partial(self.toggle_status, self.devices[device].ip))
+                command = 'off' if self.devices[device].status else 'on'
+
+                button.config(command=partial(self.toggle_status, self.devices[device].ip, command))
                 button.grid(row=i, column=2, padx=5, pady=2)
 
                 #self.widgets.extend([entry, label, button])

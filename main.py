@@ -23,27 +23,20 @@ async def request_handler(request: Request):
     msg_type = message.get("type", None)
 
     if msg_type == "SmartPlugDiscovery":
-        await tapo_plugs.retrieve_devices()
+        await w.tapo_discovery()
         # TODO: what should be returned to a SmartPlugDiscovery
         return Response(content="Discovery success", status_code=200)
 
     elif msg_type == "SmartPlugCommand":
         command = message.get("command")
         plug_ip = w.retrieve_plug_ip(message.get("id"))
-        plug = w.retrieve_plug(plug_ip)
 
-        if plug:
-            match command.lower():
-                case "on":
-                    await plug.turn_on()
-                    w.update_buttons(plug_ip, True)
-                    return Response(content=f"Plug switched {command.lower()}", status_code=200)
-                case "off":
-                    await plug.turn_off()
-                    w.update_buttons(plug_ip, False)
-                    return Response(content=f"Plug switched {command.lower()}", status_code=200)
-                case _:
-                    return Response(content="Missing command in SmartPlugCommand", status_code=400)
+        if plug_ip:
+            if command.lower() == "on" or command.lower() == "off":
+                w.toggle_status(plug_ip, command.lower())
+                return Response(content=f"Plug switched {command.lower()}", status_code=200)
+            else:
+                return Response(content="Missing command in SmartPlugCommand", status_code=400)
         else:
             return Response(content="Plug name not found in Middleware", status_code=400)
 
